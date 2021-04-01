@@ -14,76 +14,76 @@ Note: All the database information (dbname, user, password) is in “.env” fil
 
 Routes:
 
-1.	Post on ‘/signup’
-o	To register the user and takes json in request object.
-o	Object will have three fields i.e. email (should be unique), name, password.
-e.g. 
+1.	Post on ‘/signup’ <br />
+o	To register the user and takes json in request object.<br />
+o	Object will have three fields i.e. email (should be unique), name, password.<br />
+e.g. <br />
 {
-    "name": "Darshan",
-    "email": "darshan123@gmail.com",
+    "name": "Darshan",<br />
+    "email": "darshan123@gmail.com",<br />
     "password": "password"
-}
+}<br />
 
-o	id will be generated automatically on database.
+o	id will be generated automatically on database.<br />
 
 
 
-2.	Put on ‘/login’
-o	Used to login the user.
-o	Takes json object in request body with parameters email and password
-e.g.
+2.	Put on ‘/login’<br />
+o	Used to login the user.<br />
+o	Takes json object in request body with parameters email and password<br />
+e.g.<br />
 {
-    "email": "darshan123@gmail.com",
+    "email": "darshan123@gmail.com",<br />
     "password": "password"
-}
+}<br />
 
 
-3.	Post on ‘/news’
-o	Used to create the news.
-o	Takes json object in request body with parameters title and description.
+3.	Post on ‘/news’<br />
+o	Used to create the news.<br />
+o	Takes json object in request body with parameters title and description.<br />
 
-e.g.
+e.g.<br />
 {
-    "title": "Demo News",
+    "title": "Demo News",<br />
     "description": " News by darshan123@gmail.com"
-}
+}<br />
 
-o	The id of news and userid (i.e. id of user who created news) are added automatically.
-o	The id of every news is returned in response because while deleting and updating the news, news id is used.
+o	The id of news and userid (i.e. id of user who created news) are added automatically.<br />
+o	The id of every news is returned in response because while deleting and updating the news, news id is used.<br />
 
 
-4.	Patch on ‘news’
-o	Used to update the news.
-o	Takes json object in request body with fields id, title and description.
+4.	Patch on ‘news’<br />
+o	Used to update the news.<br />
+o	Takes json object in request body with fields id, title and description.<br />
 
-e.g.
+e.g.<br />
 {
-    "id": 5,
-    "title": "Demo",
+    "id": 5,<br />
+    "title": "Demo",<br />
     "description": "Updated news by darshan123@gmail.com"
-}
+}<br />
 
-o	Note: Only the user who has published the news will be able to update the news.
-5.	Delete on ‘/news’
-o	Used to delete the news.
-o	Takes json object in request body with field id.
-e.g.
+o	Note: Only the user who has published the news will be able to update the news.<br />
+5.	Delete on ‘/news’<br />
+o	Used to delete the news.<br />
+o	Takes json object in request body with field id.<br />
+e.g.<br />
 {
     "id": 5
-}
-o	Note: Only the user who has published the news will be able to update the news.
+}<br />
+o	Note: Only the user who has published the news will be able to update the news.<br />
 
 
-6.	Get on ‘/news’
-o	Used to get all the news present in database.
-o	No parameters passed.
+6.	Get on ‘/news’<br />
+o	Used to get all the news present in database.<br />
+o	No parameters passed.<br />
 
-e.g.  http://localhost:3000/news
+e.g.  http://localhost:3000/news<br />
 
-7.	Get on ‘/news/:id’
-o	Used to get the news with specific id.
-o	News id is passes as parameter in url.
-e.g. http://localhost:3000/news/5
+7.	Get on ‘/news/:id’<br />
+o	Used to get the news with specific id.<br />
+o	News id is passes as parameter in url.<br />
+e.g. http://localhost:3000/news/5<br />
 
 
 Note: For all the routes of ‘news’, user must be logged in.
