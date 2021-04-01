@@ -5,8 +5,8 @@ I have created the API only i.e. backend only. So, please check the endpoints by
 
 
 Setup:
-1.	Unzip the folder.
-2.	Open terminal and go to the path where folder is unzipped.
+1.	Clone the repository
+2.	Open terminal and go to the path where cloned the repository.
 3.	Type “npm install” to install the node-modules.
 4.	Type “npm run start” and the server will start.
 5.	Open Postman to check the below endpoints
