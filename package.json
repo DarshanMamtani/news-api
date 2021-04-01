@@ -1,7 +1,7 @@
 {
   "name": "news-api",
   "version": "1.0.0",
-  "description": "\"Internship interview task to create a new-api\"",
+  "description": "\"Internship interview task to create a news-api\"",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
